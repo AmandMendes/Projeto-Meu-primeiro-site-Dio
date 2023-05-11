@@ -1,0 +1,226 @@
+<html>
+   <head>
+         <title>Introdução ao HTML na Prática - Projeto</title>
+   </head>
+   <body>
+            <h1>Primeiros passos com HTML</h1>
+                <h2>Aprendendo HTML na prática</h2>
+                  <a href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/a6c501f1-c8f1-41b0-ac09-9f30e79fcd01?back=/track/formacao-html-web-developer&tab=path&moduleId=undefined" target="_blank">Curso Dio</a>
+                           
+                <h2><a href="#indice">Índice</a></h2>
+                    <ul>
+                        <li><a href="#Index">Index</a></li>
+                        <li><a href="#Estrutura">Estrutura Básica do HTML</a></li>
+                            <ul>
+                                <li><a href="estruturas-html.html">Cabeça (head)</a></li>
+                                <li><a href="estruturas-html.html">Título (title)</a></li>
+                                <li><a href="estruturas-html.html">Corpo (body)</a></li>
+                            </ul>
+                        <li><a href="#Tags">Tags</a></li>
+                        <li><a href="#Atributos">Atributos das Tags</a></li>
+                        <li><a href="#Textos">Textos</a></li>
+                        <li><a href="#Listas">Listas Ordenadas e Não Ordenadas</a></li>
+                            <ul>
+                                <li><a href="#ul">Lista não ordenada</a></li>
+                                <li><a href="#ol">Lista ordenada</a></li>
+                            </ul>
+                        <li><a href="#Links">Links</a></li>
+                    </ul>
+        
+                <h3 id="Index">Index</h3>
+                
+                    <p>
+                    Index de site é o índice que cada endereço da web tem em mecanismos de busca. Nesse registro, são catalogadas informações sobre os assuntos abordados naquele site e com quais temas ele se relaciona. Por isso, toda vez que um novo site é colocado no ar, é realizado um processo de indexação. Assim, é feita uma catalogação e ele passa a ser encontrado por meio de palavras-chaves relacionadas. É como se esse site e suas páginas pudessem ser categorizados. Por exemplo, se sua página fala de Marketing Digital, ele aparecerá na SERP de pesquisas de termos relacionados a esse assunto<a href="#Ref-link1">¹</a>.
+                    </p> 
+                
+                <h3 id="Estrutura">Estrutura Básica do HTML</h3>
+                    
+                    
+                    <p>
+                        O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:
+                    </p>
+                    <img width="400" src="Estrutura-basica-html.png" >
+                    <p>
+                        É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme seguinte estrutura:
+                        <a href="estruturas-html.html"> Head, Title e Body</a>
+                    </p>
+        
+                <a href="index.html"> Voltar índice</a>
+                
+                <h3 id="Tags">Tags</h3>
+                
+
+                <h3><p>Definição das tags em HTML: <  > e < / ></p></h3>
+                    <p>A grande maioria das tags existem em pares, indicando onde deve iniciar e terminar um tipo de marcação. A tag de início é somente o comando entre <>, já a tag de término, possui o símbolo / após  >. Veja:
+                    <ul>
+                        <li><strong>Tag de início:</strong>  < nome do comando > </li>
+                        <li><strong>Tag de término:</strong> < / nome do comando > </li>
+                    </ul>    
+                        <p>Note que o nome do comando deverá sempre ser o mesmo. Assim, o que estiver entre essas duas tags, o navegador irá interpretar da maneira que você ordenou através de seu código HTML<a href="#Ref-link3">³</a>.</p>
+                
+                <h3>Exemplos de Tags:</h3>
+                    <ul>
+                        <li> <strong>< i >  < /i > :</strong> <i>Ítalico</i></li>
+                        <li> <strong>< strong > < / strong > :</strong> <strong>Negrito</strong></li>
+                        <li> <strong>< u >  < /u > :</strong>  <i>Sublinhado</i></li>
+                        <li> <strong>< mark >  < /mark > :</strong> <mark>Marca texto</mark></li>
+                        
+                        <li> <strong>< sup >  < /sup > :</strong> <sup>Sobrescrito</sup></li>
+                        <li> <strong>< input /> :</strong> Não possui Tag de fechamento, ela mesma se fecha. Exemplo: < input type="text" />: Cria um campo de digitação -> <input type="text" /></li>
+                        <li> <strong>< img />:</strong> Utilizado para inserir imagens. Também se auto fecha.</li>
+                    </ul>
+                    <a href="index.html"> Voltar índice</a>
+
+                <h3 id="Atributos">Atributos das Tags</h3>
+                    <p>Os atributos são usados para personalizar tags. O que isso significa? De alguma maneira, algum dia você quer redimencionar uma imagem ou tabela ou mudar a cor da fonte. Tudo isso é possível com a ajuda de atibutos.</p>
+                
+                <h3>Exemplos de Atributos de Tags</h3>
+                    <ul>
+                        <li><strong>id:</strong> < strong id="titulo"> < /strong> </li>
+                            
+                            <p>O id é a identificação da atribuição que irá ser inserido em uma tag. Por exemplo, se eu quiser linkar um item do índice a um título no texto, posso fazer:  </p>
+                            <p> < h3 id= "palavra"> < /h3 > ou em uma lista < li id="palavra">< /li> e etc. Serve para que seja possível identificar no Javascript qual elemento você irá mexer. </p> 
+                             
+                                
+                        <li><strong>style:</strong> < strong style="color: blue;"> Exemplo< /strong> 
+                            <p>
+                                <strong style="color: blue;"> Exemplo </strong> .Será utilizado no CSS. CSS é um sistema capaz de formatar o HTML, são comandos predefinidos que farão que o navegador "olhe" para o elemento e formate da forma desejada. O Style coloca comando CSS direto no elemento. </li>
+                        
+                        <li><strong>Class:</strong> < strong class="titulo-principal">< /strong>. 
+                            <p>Também voltado para o CSS, é possível padronizar um formato predefinido. </li>
+                            </p>
+                        
+                        <li><strong>Type:</strong> < input type="number" /> <input type="number" /> 
+                            <p>
+                                O type é um atributo do input para definir o caractere que será utilizado no campo de texto. Como no exemplo, o number definiu que será apenas aceito números. </li>
+                            </p>
+                        
+                        <li><strong>src:</strong> < img src="http://site.com" ou < img src="imagem.png".  </li>
+                            <p></p><strong>Exemplo url:</strong> <img width="100" src="https://i.pinimg.com/originals/11/41/5a/11415a11e4f4503d3351e1f183be8907.jpg" /></p> 
+                            <p><strong>Exemplo imagem do pc:</strong> <img width="90" src="wifi.jpg" /> </p>
+                            
+                        <li><strong>Width:</strong> Serve para redimencionar a largura da imagem. Exemplo: < img width="150" src="imagem.jpg"</li>
+                        
+                        <li><strong>align:</strong> < h2 align="center">Título centrado.< /h2> É um atributo de alinhamento. Outros exemplos: left e right 
+                           </li>
+                          
+                        </ul>
+                            <img width="400" src="atributos.png" />
+                        <blockquote>  
+                            <sup>
+                                <strong> Fonte da tabela:</strong> <a href="https://tutorialehtml.com/pt/html-tutorial-atributos/" target="_blank">HTML - Atributos</a> 
+                            </sup>
+                        </blockquote>
+                        <a href="index.html"> Voltar índice</a>
+
+                <h3 id="Textos">Textos</h3>
+                <h3>Heading tags</h3>
+                    <p>As heading tags, pode-se entender que existe uma escala de 1 a 6 (h1 a h6), onde a h1 predomina sobre as demais por representar o título principal, afinal, todo texto tem ao menos 1 título. As demais tags são utilizadas conforme os subtítulos inseridos, como no exemplo do sumário automático do Word, sendo assim, a h1 deve ser vista como a mais importante e a h6 a menos importante.</p>        
+                    <p>Ao contrário do que para muitos pode parecer, é completamente dispensável a utilização de todas as heading tags em um texto. Suponhamos que seu conteúdo possua 2 capítulos com 2 subcapítulos no primeiro e 1 subcapitulo no último, além do próprio título principal em h1, veremos como ficaria seu formato no ponto de vista ideal para SEO (Search Engine Optimization "otimização de mecanismos de busca"):</p>
+                    <ul>
+                        <li><h1>Título Principal</h1></li>  
+                        <li><h2>Capítulo 1</h2></li>
+                        <li><h3>Subcapítulo 1</h3></li>
+                        <li><h3>Subcapítulo 2</h3></li>
+                        <li><h2>Capítulo 2</h2></li>
+                        <li><h3>Subcapítulo 3</h3></li>
+                    </ul>
+                                
+                    <p>Utilizar seis tipos de heading tags é algo difícil de imaginar, até porque, conforme explicado acima, a hierarquia envolve relevância.</p>
+                    <p>Portanto, quanto maior o número da heading menor será sua relevância, assim prejudicando o SEO da página <sup><a href="#Ref-link4">4</a></sup></p>
+                    
+                    <strong>
+                    <ol>
+                        <h1><li>Teste h1</li></h1>
+                        <h2><li>Teste h2</h2></li>
+                        <h3><li>Teste h3</h3></li>
+                        <h4><li>Teste h4</h4></li>
+                        <h5><li>Teste h5</h5></li>
+                        <h6><li>Teste h6</h6></li>
+                    </ol>
+                    </strong>
+
+                    <p><strong>A Tag P:</strong> < p> < /p> É utilizada em cada parágrafo.</p>
+                    <p>
+                    <strong>blockquote:</strong> < blockquote> </ blockquote> É utilizado para fazer citações no texto, como por exemplo, citar textos de outro autor, ou uma explicação especifica no texto e etc.
+                    </p>
+                    <blockquote>
+                        <u><i>Exemplo de citação.</i></u>
+                    </blockquote>
+                    <a href="index.html"> Voltar índice</a>
+
+                <h3 id="Listas">Listas ordenada e não ordenadas</h3>
+                    <p>Lista de ingredientes, lista de pessoas, passo-a-passo enumerado de um tutorial...listas e mais listas. Listas são elementos textuais muito importantes e são de suma importância na criação de sites, para uma boa experiência do usuário e até para o SEO (otimização de sites para buscadores), As listas mais comuns são:</p>
+                    <ul>
+                        <li id="ul">Listas não ordenadas (que somente apresentam aquelas bolinhas ao lado, chamadas de bullets): Representado pela tag < ul > < /ul >.</li>
+                        <li id="ol">Listas ordenadas (que mostram uma sequência numérica): Representado pela tag < ol > < /ol >.</li>
+                    </ul>
+                    <p>
+                        <strong>A tag < li > </strong> o li é de list item, do inglês. Usamos essas tags < li > e < /li > para cada um dos itens de uma lista <a href="#Ref-link5"><sup>5</sup></a>.
+                    </p>
+                    <p>
+                        <strong>Exemplo de lista não ordenada</strong>
+                    </p>
+                    <p>
+                        <img src="tag-lista-nao-ordenada.png" />
+                    </p>
+                    <p>
+                        <strong>Exemplo de lista ordenada</strong>
+                    </p>
+                    <p>
+                        <img src="tag-lista-ordenada.jpg" />
+                    </p>
+                    <a href="index.html"> Voltar índice</a>
+                <h3 id="Links">O que são os links HTML</h3>
+                    <p>
+                        Desde a origem da internet, o que torna a web o que ela é hoje é justamente a possibilidade de vincular um documento a qualquer outro documento ou recurso. Essa função é chamada de hiperlink ou link. Mas afinal de contas, o que são os links HTML?
+                    </p>
+                    <p>
+                        O link HTML, nada mais é que uma função do HTML que permite inserir os hiperlinks em diversos elementos, como textos e imagens. Um link precisa sempre apontar para uma URL (endereço) existente em seu site. Caso contrário, você poderá obter uma mensagem de erro 404.
+                    </p>
+                    <p>
+                        A tag link do HTML está presente desde a primeira versão, criada por Tim Berners-Lee.
+                    </p>
+
+                <h3>
+                    Como fazer um link em HTML
+                </h3>
+                     <p>
+                        No HTML, os links são definidos pela tag <a>. Dentro dessa tag incluímos o atributo href (Hypertext Reference), que é o endereço de destino do link. Dentro do conteúdo da tag <a>, incluímos então o texto ou elemento que servirá como redirecionador, ou seja, que ao ser clicado, executará a função de redirecionar para o endereço dentro do atributo href.
+                    </p>
+                    <p>
+                        Dessa forma, a sintaxe básica do HTML link é:
+                    </p>
+                    <p>
+                        <strong>< a href="url"> Exemplo < /a ></strong> <a href="#Ref-link6"><sup>5</sup></a>
+                    </p>
+                    
+                <h3>Tags e atributos</h3>
+                    <ul>
+                        <li>a href < a href"http://site.com"> Texto < /a></li>
+                            <ul>
+                                <li>< a href="index.html"> Texto< /a>: É possível linkar para outras páginas no mesmo site.</li>
+                            </ul>
+                        <li>target: atributo da Tag a que te da opções de formas para abrir o link.</li>
+                            <ul>
+                                <li>self: abre o link na mesma aba.</li>
+                                <li>blank: abre o link em uma nova aba.</li>
+                            </ul>
+                        <li>Title: atributo que coloca um texto no "balãozinho" quando for clicar no link.</li>
+                        <li></li>
+                    </ul>
+                        <p>Obervação: É recomendado que o usuário abra os links na mesma página, não abrir sempre uma nova aba, apenas quando necessario utilizando links externos.</p>
+                    <a href="index.html"> Voltar índice</a>
+                <h4>FONTES
+
+                    <ol>
+                        <li><h4 id="Ref-link1"><a href="https://rockcontent.com/br/blog/index-de-site/#:~:text=Index%20de%20site%20%C3%A9%20o,que%20eles%20obtenham%20tr%C3%A1fego%20qualificado." target="_blank">Saiba o que é index de site e qual é a sua importância - https://rockcontent.com/</a></h4></li>
+                        <li><h4 id="Ref-link2"><a href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html" target="_blank">Um guia para iniciantes na área de web - https://ableless.github.io</a></h4></li>
+                        <li><h4 id="Ref-link3"><a href="https://www.htmlprogressivo.net/2013/04/O-que-sao-tags-em-HTML-para-que-servem-e-como-usar.html" target="_blank">HTML Progressivo - https://www.htmlprogressivo.net/</a></h4></li>
+                        <li><h4 id="Ref-link4"><a href="https://rockcontent.com/br/blog/o-que-sao-heading-tags/" target="_blank">H1, H2 e H3: o que são as heading tags e como usá-las - https://rockcontent.com/br/blog/o-que-sao-heading-tags/</a></h4></li>
+                        <li><h4 id="Ref-link5"><a href="https://www.htmlprogressivo.net/2013/08/Como-criar-listas-simples-e-listas-ordenadas-com-numeros.html" target="_blank">Aprenda a criar Listas Simples e Listas Ordenadas em HTML - https://www.htmlprogressivo.net/2</a>
+                        <li><h4 id="Ref-link6"><a href="https://www.homehost.com.br/blog/tutoriais/links-html/#topico1" target="_blank">Links HTML: saiba o que são e como utilizar no seu site - https://www.homehost.com.br</a>
+                    </ol>
+                </h4>
+    </body> 
+</html>
